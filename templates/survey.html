@@ -1,0 +1,110 @@
+<html>
+<head>
+  <title>Seven Wonders Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpeg');
+      background-size: cover;
+    }
+    form {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="password"],select {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    input[type="reset"], input[type="submit"] {
+      width: 100px;
+      height: 30px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="reset"]:hover, input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <center><h1 style="color: white">Survey From</h1></center>
+  <!-- style="display: inline-block; background-color: white" -->
+  <form style="background-color:rgb(176, 210, 229)">
+    <label>Enter Your Name:</label>
+    <input type="text" name="t1" size="25"/>
+    <label>Enter Your Password:</label>
+    <input type="password" name="t2" size="15"/>
+    <label>Select Your Country:</label>
+    <select name="S1">
+                <option value="1">China</option>
+                <option value="1">Mexico</option>
+                <option value="1">Brazil</option>
+                <option value="1">Peru</option>
+                <option value="1">Jordan</option>
+                <option value="1">India</option>
+                <option value="1">Italy</option>
+                <option value="1">Other</option>
+    </select>
+    <label>Select the seven wonders of the world that you liked</label>
+        <input type="checkbox" name="c1"/>Great Wall of China<br>
+        <input type="checkbox" name="c2"/> Chichén Itzá<br>
+        <input type="checkbox" name="c3"/> Christ the Redeemer<br>
+        <input type="checkbox" name="c4"/> Machu Picchu<br>
+        <input type="checkbox" name="c5"/> Petra<br>
+        <input type="checkbox" name="c6"/> Taj Mahal<br>
+        <input type="checkbox" name="c7"/> Colosseum<br>
+        <br>
+        <label>why do you like it/them</label>
+        <textarea name="ta1" rows="10" cols="40"></textarea>
+      <br><br>
+      <label>Answer few questions based on 7 wonders </label>
+      <label>1. Where is Machu Picchu located?</label><br>
+      <label><input type="radio" name="location" /> Peru</label><br>
+      <label><input type="radio" name="location" /> Brazil</label><br>
+      <label><input type="radio" name="location" /> Switzerland</label><br>
+      <label><input type="radio" name="location" /> Malaysia</label><br>
+
+      <label>2. Which New 7 Wonder is a statue of Jesus Christ?</label><br>
+      <label><input type="radio" name="statue" /> Christ the Redeemer</label><br>
+      <label><input type="radio" name="statue" /> The Colosseum</label><br>
+      <label><input type="radio" name="statue" /> The Taj Mahal</label><br>
+      <label><input type="radio" name="statue" /> Machu Picchu</label><br>
+
+      <label>3. Which New 7 Wonder is an ancient Roman amphitheater?</label><br>
+      <label><input type="radio" name="amphitheater" /> The Colosseum</label><br>
+      <label><input type="radio" name="amphitheater" /> Petra</label><br>
+      <label><input type="radio" name="amphitheater" /> Machu Picchu</label><br>
+      <label><input type="radio" name="amphitheater" /> Chichén Itzá</label><br>
+
+
+
+
+    <input type="reset" value="Reset"/>
+    <input type="submit" value="Submit"/>
+  </form>
+</body>
+</html>
